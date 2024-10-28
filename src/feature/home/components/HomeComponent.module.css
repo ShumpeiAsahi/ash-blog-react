@@ -28,7 +28,7 @@
 
 .latestPostList a {
   word-break: break-word;
-   /* 常に2行分の高さを確保 */
-   min-height: calc(2 * 1.5em); /* 1行の高さを1.5emと仮定 */
-   max-height: calc(2 * 1.5em);
+  /* 常に2行分の高さを確保 */
+  min-height: calc(2 * 1.5em); /* 1行の高さを1.5emと仮定 */
+  max-height: calc(2 * 1.5em);
 }
