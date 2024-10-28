@@ -11,7 +11,7 @@ function HomeComponent() {
   if (!data) return null;
 
   const posts = data.map((post) => ({
-    id: post.sys.id,
+    id: post.fields.id,
     title: post.fields.title,
     createdAt: post.fields.createdAt,
   }));
