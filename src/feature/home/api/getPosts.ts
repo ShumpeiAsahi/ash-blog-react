@@ -10,7 +10,7 @@ type BlogPostFields = {
 async function getPosts(): Promise<{ fields: BlogPostFields }[]> {
   const entries = await client.getEntries({
     content_type: "blogPost",
-    order: ["-sys.createdAt"], // 日付順に降順でソート
+    order: ["-fields.createdAt"], // 日付順に降順でソート
     limit: 10,
     select: ["fields.title", "fields.body", "fields.createdAt"],
   });
