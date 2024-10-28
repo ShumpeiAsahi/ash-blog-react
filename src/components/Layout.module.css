@@ -1,48 +1,35 @@
 .titleContainer {
-    display: flex;
-    align-items: center;
-    box-sizing: border-box; /* パディングとボーダーを含む幅と高さを設定 */
-    cursor: pointer; /* カーソルをポインタに変更 */
-    background: transparent; /* 背景を透明に */
-    border: none; /* ボーダーをなしに */
-    padding: 0; /* パディングをリセット */
-    margin: 0; /* マージンをリセット */
-    font: inherit; /* 親のフォントスタイルを継承 */
-    text-align: inherit; /* 親のテキスト揃えを継承 */
-    color: inherit; /* 親の色を継承 */
-  }
-  
-  .titleImage {
-    width: 48px;
-    height: 48px;
-  }
-  
-  .titleText {
-    margin: 0;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 0 0 0 10px;
-  }
-  .footer {
-    margin: 120px 0 10px 0;
-    p {
-      text-align: center;
-      font-size: 12px;
-    }
-  }
-  
-  .buyMeACoffee {
-    margin: 10px auto 40px 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box; /* パディングとボーダーを含む幅と高さを設定 */
+  cursor: pointer; /* カーソルをポインタに変更 */
+  background: transparent; /* 背景を透明に */
+  border: none; /* ボーダーをなしに */
+  padding: 0; /* パディングをリセット */
+  margin: 0; /* マージンをリセット */
+  font: inherit; /* 親のフォントスタイルを継承 */
+  text-align: inherit; /* 親のテキスト揃えを継承 */
+  color: inherit; /* 親の色を継承 */
+  text-decoration: none;
+}
+
+.titleImage {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.titleText {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 0 0 0 10px;
+}
+.footer {
+  margin: 120px 0 10px 0;
+  p {
     text-align: center;
-    p {
-      font-size: 14px;
-      font-weight: bold;
-    }
+    font-size: 12px;
   }
-  
-  .links {
-    a {
-      text-decoration: none;
-      color: #222;
-    }
-  }
+}
