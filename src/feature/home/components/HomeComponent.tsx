@@ -27,7 +27,7 @@ function HomeComponent() {
             return (
               <p key={post.id}>
                 <span>{createdAt} </span>
-                <Link to={`/post/${post.id}`}>{post.title}</Link>
+                <Link to={`/posts/${post.id}`}>{post.title}</Link>
               </p>
             );
           })}
